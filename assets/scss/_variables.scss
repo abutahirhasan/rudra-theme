@@ -1,0 +1,238 @@
+
+:root {
+    
+    --body: #F8F8F8;
+    --black: #2D2D2D;
+    --white: #fff;
+    --theme: #B4E717;
+    --theme2: #2ECC71;
+    --theme3: #4033FF;
+    --theme4: #1C4B42;
+    --header: #161616;
+    --text: #1C4B42;
+    --border: rgba(44, 47, 88, 0.11);
+    --bg: #F8F8F8;
+    --bg-2: #000;
+    --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+}
+
+// Theme Color - Defualt Colors
+$body-color: var(--body);
+$black: var(--black);
+$white: var(--white);
+$theme-color: var(--theme);
+$theme-color2: var(--theme2);
+$theme-color3: var(--theme3);
+$theme-color4: var(--theme4);
+$text-color: var(--text);
+$header-color: var(--header);
+$border-color: var(--border);
+$bg-color: var(--bg);
+$bg-color-2: var(--bg-2);
+$shadow: var(--box-shadow);
+
+
+//color Class
+.body-clr{
+    color: $body-color;
+}
+.body-bg{
+    background-color: $body-color;
+}
+.black-clr{
+    color: $black;
+}
+.black-bg{
+    background-color: $black;
+}
+.white-clr{
+    color: $white;
+}
+.white-bg{
+    background-color: $white;
+}
+.theme-clr{
+    color: $theme-color;
+}
+.theme-bg{
+    background-color: $theme-color;
+}
+.theme-clr2{
+    color: $theme-color2;
+}
+.theme-bg2{
+    background-color: $theme-color2;
+}
+.theme-clr3{
+    color: $theme-color3;
+}
+.theme-bg3{
+    background-color: $theme-color3;
+}
+.theme-clr4{
+    color: $theme-color4;
+}
+.theme-bg4{
+    background-color: $theme-color4;
+}
+.border-clr{
+    border: 1px solid $border-color;
+}
+.text-clr{
+    color: $text-color;
+}
+
+
+
+
+
+//font Size
+.fz-10{
+    font-size: 10px;
+    line-height: 1.5;
+}
+.fz-11{
+    font-size: 11px;
+    line-height: 1.5;
+}
+.fz-12{
+    font-size: 12px;
+    line-height: 1.5;
+}
+.fz-13{
+    font-size: 13px;
+    line-height: 1.5;
+}
+.fz-14{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.fz-15{
+    font-size: 15px;
+    line-height: 1.5;
+}
+.fz-16{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.fz-17{
+    font-size: 17px;
+    line-height: 1.5;
+}
+.fz-18{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.fz-19{
+    font-size: 19px;
+    line-height: 1.5;
+}
+.fz-20{
+    font-size: 20px;
+    line-height: 1.4;
+}
+.fz-21{
+    font-size: 21px;
+    line-height: 1.4;
+}
+.fz-22{
+    font-size: 22px;
+    line-height: 1.4;
+}
+.fz-23{
+    font-size: 23px;
+    line-height: 1.4;
+}
+.fz-24{
+    font-size: 24px;
+    line-height: 1.4;
+}
+.fz-25{
+    font-size: 25px;
+    line-height: 1.4;
+}
+.fz-26{
+    font-size: 26px;
+    line-height: 1.4;
+}
+.fz-27{
+    font-size: 27px;
+    line-height: 1.4;
+}
+.fz-28{
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+//font Weight
+.fw-300{
+    font-weight: 300 !important;
+}
+.fw-400{
+    font-weight: 400 !important;
+}
+.fw-500{
+    font-weight: 500 !important;
+}
+.fw-800{
+    font-weight: 800 !important;
+}
+
+@include breakpoint(max-lg){
+    .fz-15{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .fz-16{
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .fz-17{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .fz-18{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .fz-19{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .fz-20{
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    .fz-21{
+        font-size: 19px;
+        line-height: 1.4;
+    }
+    .fz-22{
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .fz-23{
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .fz-24{
+        font-size: 22px;
+        line-height: 1.4;
+    }
+    .fz-25{
+        font-size: 22px;
+        line-height: 1.4;
+    }
+    .fz-26{
+        font-size: 22px;
+        line-height: 1.4;
+    }
+    .fz-27{
+        font-size: 22px;
+        line-height: 1.4;
+    }
+    .fz-28{
+        font-size: 22px;
+        line-height: 1.4;
+    }
+}

@@ -1,0 +1,171 @@
+.nano-footer-widget-wrapper {
+    padding: 90px 0px 120px;
+
+    @include breakpoint (max-xl) {
+        padding: 60px 0 90px;
+    }
+
+    @include breakpoint (max-lg) {
+        padding: 50px 0 80px;
+    }
+
+    .nano-footer-single-widget {
+        margin-top: 30px;
+
+        .nano-widget-head {
+            margin-bottom: 30px;
+
+            h5 {
+                color: $white;
+            }
+        }
+
+        .nano-footer-content {
+            p {
+                max-width: 351px;
+                color: $white;
+            }
+
+           .socal-icon {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-top: 40px;
+           
+            a {
+                width: 52px;
+                height: 52px;
+                line-height: 52px;
+                border-radius: 30px;
+                background: #1E1E1E;
+                display: inline-block;
+                text-align: center;
+                color: $white;
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+                }
+             }
+           }
+        }
+
+        .list-area {
+            li {
+                font-size: 18px;
+                font-weight: 400;
+
+                &:not(:last-child){
+                    margin-bottom: 15px;
+                }
+
+                a {
+                    color: $white;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        top: 8px;
+                        left: 0;
+                        width: 6px;
+                        height: 6px;
+                        content: "";
+                        border-radius: 50%;
+                        background-color: $theme-color;
+                        opacity: 0;
+                        visibility: hidden;
+                        @include transition;
+                    }
+
+                    &:hover {
+                        padding-left: 20px;
+                        color: $theme-color;
+
+                       &::before {
+                         opacity: 1;
+                         visibility: visible;
+                       }
+                    }
+                }
+            }
+        }
+
+        .search-widget {
+            position: relative;
+            max-width: 385px;
+            width: 100%;
+
+            input {
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                position: relative;
+                font-size: 18px;
+                font-weight: 400;
+                padding: 16px 18px;
+                color: rgba(255, 255, 255, 0.50);
+                border-radius: 30px;
+                border-radius: 30px;
+                border: 1px solid rgba(255, 255, 255, 0.20);
+                text-transform: capitalize;
+
+                @include breakpoint(max-sm) {
+                    font-size: 16px;
+                }
+
+            &::placeholder {
+                color: $text-color;
+            }
+        }
+
+        button {
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            bottom: 4px;
+
+            &.icon {
+               width: 50px;
+               height: 50px;
+               line-height: 50px;
+               text-align: center;
+               background-color: $theme-color;
+               color: $white;
+               border-radius: 100%;
+            }
+         }
+      }
+    }
+}
+
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
+
+    .footer-wrapper {
+        @include flex;
+        justify-content: space-between;
+        padding: 30px 0;
+
+        p {
+            color: $white;
+        }
+
+        .nano-footer-list {
+            @include flex;
+            gap: 40px;
+
+            li {
+                font-size: 18px;
+
+                a {
+                    color: $white;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
