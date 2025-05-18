@@ -3,25 +3,36 @@
     position: relative;
     z-index: 2;
     overflow: hidden;
-    vertical-align: middle;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 6.8px;
     border: none;
     text-transform: capitalize;
     text-align: center;
     border-radius: 30px;
-    background: $theme-color;
-    font-family: Instrument Sans;
+    background: $theme-color4;
     color: $white;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
-    line-height: 1;
-    padding: 16px 20px;
-    letter-spacing: -0.18px;
-
+    padding: 6px 7px;
+    height: 48px;
+    line-height: 99%;
     i {
-        margin-left: 5px;
-        transform: rotate(-40deg);
         @include transition;
+    }
+    &.style1{
+        i{
+            transform: rotate(-40deg);
+        }
+        &:hover{
+            i{
+                transform: rotate(40deg);
+            }
+        }
+    }
+    &.style-white{
+        background-color: $white;
+        color: $text-color;
     }
 
     &::before {
@@ -39,25 +50,9 @@
 
     &:hover {
         color: $white;
-        box-shadow: none;
-
-        i {
-            transform: rotate(0);
-        }
-
         &::before {
             width: 100%;
         }
-    }
-
-
-    @include breakpoint (max-md){
-        padding: 20px 32px;
-    }
-
-    @include breakpoint (max-sm){
-        padding: 18px 30px;
-        font-size: 14px;
     }
 }
 

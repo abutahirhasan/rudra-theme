@@ -97,6 +97,7 @@ a {
     cursor: pointer;
     color: $header-color;
 	@include transition;
+	line-height: 1.5;
 }
 
 p {
@@ -109,3 +110,11 @@ span {
 	@include transition;
 }
 
+
+
+.container{
+	@include breakpoint(xl){
+		max-width: 1320px;
+		margin: 0 auto;
+	}
+}
