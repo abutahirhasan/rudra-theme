@@ -1,81 +1,93 @@
 //>>>>> Component Button Here <<<<<//
 .theme-btn {
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
-    display: inline-flex;
-    align-items: center;
-    gap: 6.8px;
-    border: none;
-    text-transform: capitalize;
-    text-align: center;
-    border-radius: 30px;
-    background: $theme-color4;
-    color: $white;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 6px 7px;
-    height: 48px;
-    line-height: 99%;
-    i {
-        @include transition;
-    }
-    &.style1{
-        i{
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	display: inline-flex;
+	align-items: center;
+	gap: 6.8px;
+	border: none;
+	text-transform: capitalize;
+	text-align: center;
+	border-radius: 30px;
+	background: $theme-color4;
+	color: $white;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 6px 7px;
+	height: 48px;
+	line-height: 99%;
+	i {
+		@include transition;
+	}
+	&.style1 {
+		i {
+			transform: rotate(-40deg);
+		}
+		&:hover {
+			i {
+				transform: rotate(40deg);
+			}
+		}
+	}
+	&.style2 {
+        background-color: $theme-color;
+		i {
             transform: rotate(-40deg);
-        }
-        &:hover{
-            i{
-                transform: rotate(40deg);
-            }
-        }
-    }
-    &.style-white{
-        background-color: $white;
-        color: $text-color;
-    }
+		}
+		&:hover {
+            color: $white !important;
+			i {
+                color: $white;
+				transform: rotate(40deg);
+			}
+		}
+	}
+	&.style-white {
+		background-color: $white;
+		color: $text-color;
+	}
 
-    &::before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        background-color: $header-color;
-        z-index: -1;
-        transition: all 0.4s ease-out;
-        border-radius: inherit;
-    }
+	&::before {
+		content: "";
+		position: absolute;
+		height: 100%;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		background-color: $header-color;
+		z-index: -1;
+		transition: all 0.4s ease-out;
+		border-radius: inherit;
+	}
 
-    &:hover {
-        color: $white;
-        &::before {
-            width: 100%;
-        }
-    }
+	&:hover {
+		color: $white;
+		&::before {
+			width: 100%;
+		}
+	}
 }
 
 .link-btns {
-    font-size: 16px;
-    font-weight: 600;
-    display: inline-block;
-    font-family: "Open Sans", sans-serif;
-    text-transform: capitalize;
-    color: $theme-color;
+	font-size: 16px;
+	font-weight: 600;
+	display: inline-block;
+	font-family: "Open Sans", sans-serif;
+	text-transform: capitalize;
+	color: $theme-color;
 
-    i {
-        transform: rotate(-40deg);
-        @include transition;
-        font-weight: 400;
-    }
+	i {
+		transform: rotate(-40deg);
+		@include transition;
+		font-weight: 400;
+	}
 
-    &:hover {
-
-        i {
-            transform: rotate(0);
-        }
-    }
+	&:hover {
+		i {
+			transform: rotate(0);
+		}
+	}
 }
 
 //>>>>> Component Button End <<<<<//

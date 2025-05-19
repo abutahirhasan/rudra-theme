@@ -38,6 +38,10 @@ Version: 1.0.0
   color: #fff;
 }
 
+.max-300 {
+  width: 300px;
+}
+
 .italic {
   font-style: italic !important;
 }
@@ -481,6 +485,19 @@ Version: 1.0.0
   transform: rotate(-40deg);
 }
 .theme-btn.style1:hover i {
+  transform: rotate(40deg);
+}
+.theme-btn.style2 {
+  background-color: var(--theme);
+}
+.theme-btn.style2 i {
+  transform: rotate(-40deg);
+}
+.theme-btn.style2:hover {
+  color: var(--white) !important;
+}
+.theme-btn.style2:hover i {
+  color: var(--white);
   transform: rotate(40deg);
 }
 .theme-btn.style-white {
@@ -1123,11 +1140,29 @@ span {
 .footer-middle {
   padding: 64px 0;
 }
+.footer-middle .search-widget {
+  display: flex;
+  align-items: center;
+}
 
 .rot180 {
   transform: rotate(-38deg);
 }
 
+@media screen and (max-width: 991px) {
+  .footer-middle {
+    padding: 40px 0;
+  }
+  .footer-bottom {
+    padding: 24px 0;
+  }
+  .footer-bottom .footer-list {
+    gap: 9px 32px;
+  }
+  .footer-header {
+    padding: 60px 0 40px;
+  }
+}
 @media (min-width: 1400px) {
   .header-section .container {
     max-width: 1765px;
