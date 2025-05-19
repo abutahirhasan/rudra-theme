@@ -40,30 +40,116 @@ $shadow: var(--box-shadow);
 				fill: #fff;
 			}
 		}
-        i{
-            color: #fff;
-        }
+		i {
+			color: #fff;
+		}
 	}
 }
-.max-300{
+.hover-theme1{
+	transition: all 0.4s;
+	&:hover {
+		background: $theme-color4 !important;
+		svg {
+			path {
+				stroke: $theme-color;
+				fill: $theme-color;
+			}
+		}
+		i {
+			color: $theme-color;
+		}
+	}
+}
+.max-300 {
 	width: 300px;
+}
+.max-270{
+	max-width: 270px;
+}
+.ml-auto{
+	margin-left: auto;
+}
+
+.hover-translate8{
+	transition: all 0.4s;
+	&:hover{
+		transform: translateY(-8px);
+	}
+}
+
+
+//section padding
+.pt-100{
+	padding-top: 100px;
+	@include breakpoint(max-xl){
+		padding-top: 80px;
+	}
+}
+.pb-100{
+	padding-bottom: 100px;
+	@include breakpoint(max-xl){
+		padding-bottom: 80px;
+	}
+}
+
+.mb-40{
+	margin-bottom: 40px;
+	@include breakpoint(max-lg){
+		margin-bottom: 30px;
+	}
+	@include breakpoint(max-md){
+		margin-bottom: 22px;
+	}
+}
+
+//section-header
+.section-header {
+	h2 {
+		span {
+			font-size: 48px;
+		}
+	}
+	@include breakpoint(max-xl) {
+		h2 {
+			font-size: 38px;
+			span {
+				font-size: 38px;
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		h2 {
+			font-size: 32px;
+			span {
+				font-size: 32px;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		h2 {
+			font-size: 29px;
+			span {
+				font-size: 29px;
+			}
+		}
+	}
 }
 
 //Italic
-.italic{
-    font-style: italic !important;
+.italic {
+	font-style: italic !important;
 }
 
-.lh-110{
-    line-height: 110% !important;
+.lh-110 {
+	line-height: 110% !important;
 }
 
-.mx-252{
-    max-width: 252px;
+.mx-252 {
+	max-width: 252px;
 }
 
-.theme4-border{
-    border: 1px solid $theme-color4;
+.theme4-border {
+	border: 1px solid $theme-color4;
 }
 
 //color Class
@@ -204,8 +290,8 @@ $shadow: var(--box-shadow);
 .fw-500 {
 	font-weight: 500 !important;
 }
-.fw-600{
-    font-weight: 600 !important;
+.fw-600 {
+	font-weight: 600 !important;
 }
 .fw-800 {
 	font-weight: 800 !important;
@@ -247,6 +333,9 @@ $shadow: var(--box-shadow);
 }
 .w-48 {
 	width: 48px;
+}
+.min-w-48{
+	min-width: 48px;
 }
 .w-50 {
 	width: 50px;

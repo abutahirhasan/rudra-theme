@@ -31,14 +31,14 @@
 		}
 	}
 	&.style2 {
-        background-color: $theme-color;
+		background-color: $theme-color;
 		i {
-            transform: rotate(-40deg);
+			transform: rotate(-40deg);
 		}
 		&:hover {
-            color: $white !important;
+			color: $white !important;
 			i {
-                color: $white;
+				color: $white;
 				transform: rotate(40deg);
 			}
 		}
@@ -46,6 +46,16 @@
 	&.style-white {
 		background-color: $white;
 		color: $text-color;
+	}
+	&.outline-btn {
+		background-color: transparent;
+		border: 1px solid $theme-color4;
+		color: $theme-color4;
+		&:hover {
+			i {
+				color: $white;
+			}
+		}
 	}
 
 	&::before {

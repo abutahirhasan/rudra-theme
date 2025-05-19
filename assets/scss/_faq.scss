@@ -1,0 +1,109 @@
+//faq-content_wrap
+.faq-content_wrap {
+	padding: 50px 55px;
+	position: relative;
+	z-index: 1;
+	.faq-shape1 {
+		position: absolute;
+		right: 30px;
+		bottom: 30px;
+		z-index: -1;
+	}
+	@include breakpoint(max-md) {
+		padding: 22px 20px;
+	}
+}
+
+.accordion-style1 {
+	border-radius: 10px;
+	overflow: hidden;
+	.accordion-item {
+		border-radius: 0px 0px 0px 0px;
+		background: rgba(255, 255, 255, 0.59);
+		box-shadow: 8px 8px 32px 0px rgba(36, 12, 135, 0.08);
+		backdrop-filter: blur(5px);
+		border: unset;
+		.accordion-header {
+			.accordion-button {
+				font-size: 16px;
+				font-weight: 600;
+				color: $theme-color4;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 8px;
+				&::after {
+					display: none;
+				}
+				.cus-icon {
+					width: 34px;
+					height: 34px;
+					border-radius: 50%;
+					background: $white;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: $theme-color4;
+				}
+			}
+			.accordion-button.collapsed {
+				.cus-icon {
+					background-color: $white;
+					transition: all 0.5s;
+				}
+			}
+		}
+	}
+}
+.accordion-button:focus {
+	z-index: 3;
+	border-color: none;
+	outline: 0;
+	box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+	color: $theme-color4;
+	background-color: transparent;
+	box-shadow: none;
+	.cus-icon {
+		background-color: $theme-color4 !important;
+		color: $theme-color !important;
+		transform: rotate(180deg);
+	}
+}
+
+
+
+
+
+//pricing-wrapper1
+.pricing-wrapper1{
+    max-width: 1765px;
+    margin: 0 auto;
+    background: url(../../assets/img/element/pricing-bg.png) no-repeat center center;
+    background-size: cover;
+}
+.pricing-plan-items{
+    padding: 40px 40px;
+    overflow: hidden;
+    position: relative;
+    .popular-badge{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &.groth-itemw{
+        .theme-btn{
+            background: $theme-color4 !important;
+            color: $white !important;
+            i{
+                color: $white !important;
+            }
+        }
+    }
+    @include breakpoint(max-xl){
+        padding: 29px 22px;
+    }
+}
