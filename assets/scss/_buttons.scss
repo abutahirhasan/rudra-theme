@@ -43,6 +43,19 @@
 			}
 		}
 	}
+	&.style3 {
+		background-color: $theme-color3;
+		i {
+			transform: rotate(-40deg);
+		}
+		&:hover {
+			color: $white !important;
+			i {
+				color: $white;
+				transform: rotate(40deg);
+			}
+		}
+	}
 	&.style-white {
 		background-color: $white;
 		color: $text-color;

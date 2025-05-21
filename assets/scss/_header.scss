@@ -23,6 +23,22 @@
 			}
 		}
 	}
+	&.header-white {
+		@include breakpoint(xl) {
+			.main-menu {
+				ul {
+					li {
+						a {
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+		&.sticky {
+			background: $theme-color2 !important;
+		}
+	}
 }
 
 .header-sections {
@@ -40,9 +56,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	.header-logo{
+	.header-logo {
 		width: 160px;
-		img{
+		img {
 			width: 100%;
 		}
 	}
@@ -74,7 +90,7 @@
 						background-color: $white;
 						color: $text-color !important;
 					}
-					@include breakpoint(max-xxxl){
+					@include breakpoint(max-xxxl) {
 						padding: 8px 16px 10px !important;
 					}
 				}
@@ -269,6 +285,11 @@
 		img {
 			width: 30px;
 		}
+		&.bars-white{
+			img{
+				filter: contrast(0) brightness(2);
+			}
+		}
 	}
 }
 
@@ -396,9 +417,6 @@
 			background: $bg-color;
 		}
 	}
-}
-
-.search-icon {
 }
 
 .sidebar__toggle {

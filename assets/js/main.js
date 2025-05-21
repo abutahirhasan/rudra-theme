@@ -121,6 +121,30 @@
 				prevEl: ".array-next",
 			},
 		});
+		//>> Sponsor Start <<//
+		const sponsorWrapper = new Swiper(".sponsor-wrapper", {
+			spaceBetween: 30,
+			speed: 1500,
+			loop: true,
+			autoplay: {
+				delay: 1000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 5,
+				},
+				767: {
+					slidesPerView: 5,
+				},
+				575: {
+					slidesPerView: 4,
+				},
+				0: {
+					slidesPerView: 2,
+				},
+			},
+		});
 
 		//>> Wow Animation Start <<//
 		new WOW().init();
