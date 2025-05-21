@@ -1226,6 +1226,83 @@ span {
     padding: 18px 16px;
   }
 }
+.choose-items {
+  padding: 32px 32px;
+  transition: all 0.4s;
+}
+.choose-items:hover {
+  background-color: rgba(179, 231, 23, 0.2392156863);
+}
+@media (max-width: 1399px) {
+  .choose-items {
+    padding: 24px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .choose-items {
+    padding: 20px 18px;
+  }
+}
+
+.choose-thumb-wrap .boxes {
+  max-width: 571px;
+  margin-left: auto;
+}
+.choose-thumb-wrap .text-circles {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+  .choose-thumb-wrap .text-circles {
+    left: 10px;
+    top: initial;
+    bottom: 10px;
+  }
+}
+
+.text-circles {
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+  fill: rgba(255, 255, 255, 0.65);
+  stroke-width: 0.863px;
+  stroke: var(--color-Border, #DDE4E3);
+  backdrop-filter: blur(12.9473676682px);
+  background-color: rgba(255, 255, 255, 0.65);
+}
+.text-circles .circle360 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  animation: circle360 10s linear infinite;
+}
+.text-circles .shapee {
+  transform: translate(-50%, -50%);
+}
+
+@keyframes circle360 {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.choose-wrapper-section {
+  max-width: 1770px;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  z-index: -1;
+}
+.choose-wrapper-section img {
+  width: 100%;
+  height: 100%;
+}
+
 .faq-content_wrap {
   padding: 50px 55px;
   position: relative;
@@ -1805,7 +1882,7 @@ span {
   transition: all 0.9s;
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-  background: var(--white);
+  background-color: var(--white) !important;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -2581,6 +2658,59 @@ input.main-search-input::placeholder {
   cursor: pointer;
 }
 
+.industries-section {
+  padding-top: 190px;
+}
+
+.industries-content {
+  position: relative;
+  z-index: 1;
+}
+.industries-content .industries-shape {
+  position: absolute;
+  top: -110px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.industries-content .boxex {
+  max-width: 411px;
+  margin: 0 auto;
+}
+.industries-content ul li {
+  transition: all 0.4s;
+}
+.industries-content ul li:not(:last-child) {
+  border-bottom: 1px solid var(--color-Border, #dde4e3);
+}
+.industries-content ul li .theme-clr4 {
+  transform: rotate(-40deg);
+}
+.industries-content ul li:hover {
+  cursor: pointer;
+}
+.industries-content ul li:hover .theme-clr4 {
+  transform: rotate(0deg);
+  background-color: var(--theme4);
+  color: var(--white) !important;
+}
+.industries-content ul li:hover .theme-clr4 i {
+  color: var(--white) !important;
+}
+@media (max-width: 1199px) {
+  .industries-content {
+    padding: 20px;
+  }
+  .industries-content .industries-shape {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
 .section-title {
   position: relative;
   z-index: 99;
@@ -2661,6 +2791,13 @@ input.main-search-input::placeholder {
   }
 }
 
+.service-items1 {
+  background-color: var(--white);
+}
+.service-items1 .content {
+  padding: 40px 0 !important;
+}
+
 .team-items {
   transition: all 0.4s;
 }
@@ -2677,4 +2814,30 @@ input.main-search-input::placeholder {
   background-color: var(--theme4);
   color: var(--white);
   border-color: var(--theme4) !important;
+}
+
+.testimonial-wrap {
+  background: url(../../assets/img/testimonial/testimonial-bg.png) no-repeat center center;
+  background-size: cover;
+  max-width: 1770px;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+.testimonial-wrap .collapse-area {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+@media (max-width: 991px) {
+  .testimonial-wrap .collapse-area {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-wrap .collapse-area {
+    margin-top: 70px;
+  }
+  .testimonial-wrap h3 {
+    font-size: 19px;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=main.css.map */
