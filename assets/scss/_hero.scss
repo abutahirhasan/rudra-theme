@@ -104,21 +104,65 @@
 			}
 		}
 	}
-	&.style2{
-		background: url(../../assets/img/banner/hero-thumb2.png) no-repeat top center;
+	&.style2 {
+		background: url(../../assets/img/banner/hero-thumb2.png) no-repeat top
+			center;
 		background-size: cover;
 		padding: 240px 0 280px;
-		.banner-content2{
-			h1{
+		margin: 11px;
+		border-radius: 20px;
+		.banner-content2 {
+			h1 {
 				font-size: 72px;
 				font-style: normal;
 				font-weight: 700;
-				line-height: 110%; 
+				line-height: 110%;
 			}
 		}
-		.collapse-thumb2{
+		.collapse-thumb2 {
 			bottom: -240px;
 			z-index: 1;
+		}
+		@include breakpoint(max-lg) {
+			padding: 200px 0 280px;
+			.collapse-thumb2 {
+				bottom: -170px;
+			}
+			.banner-content2 {
+				h1 {
+					font-size: 60px;
+					font-weight: 700;
+					line-height: 110%;
+				}
+			}
+		}
+		@include breakpoint(max-md) {
+			padding: 200px 0 280px;
+			.collapse-thumb2 {
+				bottom: -170px;
+				right: 20px;
+			}
+			.banner-content2 {
+				h1 {
+					font-size: 40px;
+					font-weight: 700;
+					line-height: 110%;
+				}
+			}
+		}
+		@include breakpoint(max-sm) {
+			padding: 150px 0 190px;
+			margin: 0 0;
+			.collapse-thumb2 {
+				display: none;
+			}
+			.banner-content2 {
+				h1 {
+					font-size: 40px;
+					font-weight: 700;
+					line-height: 110%;
+				}
+			}
 		}
 	}
 }

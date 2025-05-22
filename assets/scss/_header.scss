@@ -24,18 +24,24 @@
 		}
 	}
 	&.header-white {
+		margin-top: 11px;
 		@include breakpoint(xl) {
 			.main-menu {
 				ul {
 					li {
 						a {
 							color: $white;
+							&:hover {
+								background: rgba(255, 255, 255, 0.2);
+								color: $white !important;
+							}
 						}
 					}
 				}
 			}
 		}
 		&.sticky {
+			margin-top: 0 !important;
 			background: $theme-color2 !important;
 		}
 	}
@@ -285,139 +291,25 @@
 		img {
 			width: 30px;
 		}
-		&.bars-white{
-			img{
+		&.bars-white {
+			img {
 				filter: contrast(0) brightness(2);
 			}
 		}
 	}
-}
-
-.header-1 {
-	z-index: 9;
-	padding: 14px 0;
-	.header-main {
-		.header-left {
-			@include flex;
-			gap: 60px;
-
-			@include breakpoint(max-xl4) {
-				gap: 40px;
-			}
-
-			@include breakpoint(max-xxl) {
-				gap: 25px;
-			}
-
-			@include breakpoint(max-xl) {
-				gap: 20px;
-			}
-
-			.category-oneadjust {
-				width: 160px;
-				border-radius: 8px;
-				border: 1px solid rgba(92, 112, 126, 0.3);
-				padding: 10px 16px;
-				position: relative;
-				z-index: 99;
-
-				@include breakpoint(max-md) {
-					display: none;
-				}
-
-				.nice-select {
-					width: unset !important;
-					gap: 20px;
-					font-size: 16px;
-
-					.list {
-						max-height: 15vh;
-						background: $white;
-						width: 160px;
-						padding: 5px 8px;
-						overflow-y: scroll;
-
-						@include breakpoint(max-xl) {
-							right: -60px;
-						}
-
-						li {
-							color: $header-color;
-							font-size: 14px;
-							border: none;
-						}
-					}
-				}
-			}
-		}
-	}
-	&.header-style2 {
-		position: absolute;
-		padding: 0;
-		.mega-menu-wrapper {
-			border-radius: 0;
-			background: $white;
-			padding: 13px 28px;
-		}
-		&.sticky {
-			box-shadow: none;
-			background: transparent;
-			.mega-menu-wrapper {
-				box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-					rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-					rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-			}
-		}
-	}
-	&.style3 {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		background: rgba(3, 23, 64, 0.2);
-		.sidebar__toggle {
+	@include breakpoint(max-lg) {
+		.header-logo {
+			width: 170px;
+			display: block;
 			img {
-				filter: brightness(25) invert(1);
+				width: 100%;
+				height: 100%;
 			}
-		}
-		.search-trigger {
-			border-color: $white;
-			i {
-				color: $white;
-			}
-		}
-		@include breakpoint(xl) {
-			.main-menu {
-				ul {
-					li {
-						a {
-							color: $white;
-						}
-					}
-				}
-			}
-		}
-		&.sticky {
-			background: rgba(3, 23, 64, 1);
-		}
-	}
-	&.header-style4 {
-		.main-menu {
-			ul {
-				li {
-					a {
-						color: $black;
-					}
-				}
-			}
-		}
-	}
-	&.header-style5 {
-		.mega-menu-wrapper {
-			background: $bg-color;
 		}
 	}
 }
+
+
 
 .sidebar__toggle {
 	cursor: pointer;

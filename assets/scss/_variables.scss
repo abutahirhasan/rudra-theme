@@ -45,7 +45,7 @@ $shadow: var(--box-shadow);
 		}
 	}
 }
-.hover-theme1{
+.hover-theme1 {
 	transition: all 0.4s;
 	&:hover {
 		background: $theme-color4 !important;
@@ -63,41 +63,40 @@ $shadow: var(--box-shadow);
 .max-300 {
 	width: 300px;
 }
-.max-270{
+.max-270 {
 	max-width: 270px;
 }
-.ml-auto{
+.ml-auto {
 	margin-left: auto;
 }
 
-.hover-translate8{
+.hover-translate8 {
 	transition: all 0.4s;
-	&:hover{
+	&:hover {
 		transform: translateY(-8px);
 	}
 }
 
-
 //section padding
-.pt-100{
+.pt-100 {
 	padding-top: 100px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding-top: 80px;
 	}
 }
-.pb-100{
+.pb-100 {
 	padding-bottom: 100px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding-bottom: 80px;
 	}
 }
 
-.mb-40{
+.mb-40 {
 	margin-bottom: 40px;
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		margin-bottom: 30px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		margin-bottom: 22px;
 	}
 }
@@ -334,7 +333,7 @@ $shadow: var(--box-shadow);
 .w-48 {
 	width: 48px;
 }
-.min-w-48{
+.min-w-48 {
 	min-width: 48px;
 }
 .w-50 {
@@ -483,5 +482,14 @@ $shadow: var(--box-shadow);
 	.fz-28 {
 		font-size: 22px;
 		line-height: 1.4;
+	}
+	.w-48 {
+		width: 38px;
+	}
+	.h-48{
+		height: 38px;
+	}
+	.min-w-48 {
+		min-width: 38px;
 	}
 }
