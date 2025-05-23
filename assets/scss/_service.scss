@@ -1,7 +1,47 @@
 //service-items1
-.service-items1{
-    background-color: $white;
-    .content{
-        padding: 40px 0 !important;
+.service-items1 {
+	background-color: $white;
+	.content {
+		padding: 40px 0 !important;
+	}
+}
+//service-items2
+.service-items2 {
+	padding: 64px 17px;
+	transition: all 0.4s;
+    overflow: hidden;
+	.content {
+		max-width: 235px;
+		margin: 0 auto;
+		.icons {
+			width: 56px;
+			height: 56px;
+			background: rgb(46, 204, 113, 10%);
+		}
+	}
+    .hover-ele{
+        opacity: 0;
+        right: -100%;
+        transition: all 0.3s;
+    }
+	&:hover {
+		background-color: $theme-color2;
+        .hover-ele{
+            opacity: 1;
+            right: 0;
+        }
+		.content {
+			.icons {
+				background: $white;
+                svg{
+                    path{
+                        fill: $theme-color4;
+                    }
+                }
+			}
+		}
+	}
+    @include breakpoint(max-lg){
+        padding: 40px 17px;
     }
 }
