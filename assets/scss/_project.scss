@@ -90,24 +90,24 @@
 	}
 }
 
-
-//Download 
-.download-content{
+//Download
+.download-content {
 	max-width: 450px;
 }
-.download-section{
-	background: url(../../assets/img/about/download-bg.png) no-repeat center center;
+.download-section {
+	background: url(../../assets/img/about/download-bg.png) no-repeat center
+		center;
 	background-size: cover;
 	padding: 170px 17px;
 	margin: 11px;
 	border-radius: 24px;
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		padding: 80px 5px 100px;
 	}
 }
-.before-add{
+.before-add {
 	position: relative;
-	&::before{
+	&::before {
 		position: absolute;
 		right: 105%;
 		top: 20px;
@@ -116,9 +116,105 @@
 		content: "";
 		width: 95px;
 	}
-	@include breakpoint(max-xxl){
-		&::before{
+	@include breakpoint(max-xxl) {
+		&::before {
 			display: none;
 		}
+	}
+}
+
+.letter-1 {
+	letter-spacing: 1px;
+}
+
+//pricing plan
+.pricing-plan-items2 {
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	background: rgba(255, 255, 255, 0.05);
+	padding: 56px 40px;
+	ul {
+		border-top: 1px solid rgba(255, 255, 255, 0.15);
+	}
+	@include breakpoint(max-xl) {
+		padding: 36px 20px;
+	}
+}
+.priicng-growth2 {
+	background-color: $theme-color2 !important;
+	.theme-btn {
+		background-color: $theme-color4 !important;
+		color: $white !important;
+		i {
+			color: $white !important;
+		}
+	}
+}
+
+//Deserve Section
+.deserve-create-section {
+	background: url(../../assets/img/footer/deserve-bg.png) no-repeat center
+		center;
+	background-size: cover;
+	padding: 90px 5px 370px;
+	margin: 11px;
+	border-radius: 30px;
+	.deserve-content {
+		max-width: 750px;
+		margin: 0 auto;
+	}
+	@include breakpoint(max-xxl) {
+		padding: 70px 5px 320px;
+	}
+	@include breakpoint(max-lg) {
+		padding: 70px 0px 0px;
+	}
+}
+.subscribe-wrapper {
+	background: #044524;
+	backdrop-filter: blur(10px);
+	padding: 80px 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	.subscribe-inner {
+		display: flex;
+		align-items: center;
+		gap: 50px;
+	}
+	@include breakpoint(max-xxl) {
+		padding: 40px 0;
+		.subscribe-inner {
+			gap: 16px 24px;
+			flex-wrap: wrap;
+		}
+	}
+	@include breakpoint(max-lg){
+		position: inherit;
+		margin-top: 70px;
+		.subscribe-inner{
+			justify-content: center;
+		}
+	}
+}
+
+.form-grp2 {
+	border-radius: 63px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	background: rgba(255, 255, 255, 0.18);
+	border-radius: 100px;
+	padding: 4px;
+	input {
+		padding: 10px 24px;
+		background: transparent;
+		border: unset;
+		color: $white;
+	}
+	::placeholder {
+		color: $white;
+	}
+	button {
+		min-width: 56px;
 	}
 }

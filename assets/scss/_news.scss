@@ -1,0 +1,28 @@
+//blog-items2
+.blog-items2{
+    transition: all 0.5s;
+    .thumb{
+        img{
+            transition: all .3s;
+        }
+    }
+    &:hover{
+        background-color: #2E8B57;
+        .content{
+            .theme4-border{
+                border-color: $white !important;
+                color: $white;
+            }
+            h4{
+                a{
+                    color: $white;
+                }
+            }
+        }
+        .thumb{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}

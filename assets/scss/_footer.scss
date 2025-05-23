@@ -98,3 +98,18 @@
 		padding: 60px 0 40px;
 	}
 }
+
+
+.footer-section2{
+	background-color: #043A1F;
+	margin: 11px;
+	border-radius: 0 0 30px 30px;
+	.footer-inner2{
+		padding: 60px 0;
+	}
+	@include breakpoint(max-xl){
+		.footer-inner2{
+			padding: 40px 0;
+		}
+	}
+}

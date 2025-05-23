@@ -74,36 +74,58 @@
 	}
 }
 
-
-
-
-
 //pricing-wrapper1
-.pricing-wrapper1{
-    max-width: 1765px;
-    margin: 0 auto;
-    background: url(../../assets/img/element/pricing-bg.png) no-repeat center center;
-    background-size: cover;
+.pricing-wrapper1 {
+	max-width: 1765px;
+	margin: 0 auto;
+	background: url(../../assets/img/element/pricing-bg.png) no-repeat center
+		center;
+	background-size: cover;
 }
-.pricing-plan-items{
-    padding: 40px 40px;
-    overflow: hidden;
-    position: relative;
-    .popular-badge{
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    &.groth-itemw{
-        .theme-btn{
-            background: $theme-color4 !important;
-            color: $white !important;
-            i{
-                color: $white !important;
-            }
-        }
-    }
-    @include breakpoint(max-xl){
-        padding: 29px 22px;
-    }
+.pricing-plan-items {
+	padding: 40px 40px;
+	overflow: hidden;
+	position: relative;
+	.popular-badge {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	&.groth-itemw {
+		.theme-btn {
+			background: $theme-color4 !important;
+			color: $white !important;
+			i {
+				color: $white !important;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 29px 22px;
+	}
+}
+
+.accordion-style2 {
+	border-radius: 16px 16px 16px 16px;
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: 8px 8px 32px 0px rgba(36, 12, 135, 0.08);
+	backdrop-filter: blur(5px);
+	padding: 12px;
+	.accordion-item {
+		background: rgba(255, 255, 255, 0.59);
+		box-shadow: 8px 8px 32px 0px rgba(36, 12, 135, 0.08);
+		backdrop-filter: blur(5px);
+	}
+	.accordion-button:not(.collapsed) {
+		color: $black;
+		background-color: transparent;
+		box-shadow: none;
+		.cus-icon {
+			background-color: $theme-color2 !important;
+			color: $white !important;
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 0;
+	}
 }

@@ -1,26 +1,51 @@
 //testimonial-content
-.testimonial-wrap{
-    background: url(../../assets/img/testimonial/testimonial-bg.png) no-repeat center center;
-    background-size: cover;
-    max-width: 1770px;
-    margin: 0 auto;
-    border-radius: 30px;
-    .collapse-area{
-        margin-top: 100px;
-        margin-left: 50px;
-    }
-    @include breakpoint(max-lg){
-        .collapse-area{
-            margin-left: 0;
-        }
-    }
-    @include breakpoint(max-md){
-        .collapse-area{
-            margin-top: 70px;
-        }
-        h3{
-            font-size: 19px;
-            font-weight: 500;
-        }
-    }
+.testimonial-wrap {
+	background: url(../../assets/img/testimonial/testimonial-bg.png) no-repeat
+		center center;
+	background-size: cover;
+	max-width: 1770px;
+	margin: 0 auto;
+	border-radius: 30px;
+	.collapse-area {
+		margin-top: 100px;
+		margin-left: 50px;
+	}
+	@include breakpoint(max-lg) {
+		.collapse-area {
+			margin-left: 0;
+		}
+	}
+	@include breakpoint(max-md) {
+		.collapse-area {
+			margin-top: 70px;
+		}
+		h3 {
+			font-size: 19px;
+			font-weight: 500;
+		}
+	}
+}
+
+//Testimonial
+.testimonial-content2 {
+	h4 {
+		line-height: 147%;
+	}
+}
+.testimonial-section2 {
+	.array-button {
+		bottom: 0;
+		left: 20px;
+	}
+	@include breakpoint(max-xl) {
+		.array-button {
+			bottom: initial;
+			left: 10px;
+		}
+	}
+	@include breakpoint(max-md) {
+		.array-button {
+			position: initial;
+		}
+	}
 }

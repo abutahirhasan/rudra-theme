@@ -93,8 +93,11 @@ $shadow: var(--box-shadow);
 
 .mb-40 {
 	margin-bottom: 40px;
-	@include breakpoint(max-lg) {
+	@include breakpoint(max-xl) {
 		margin-bottom: 30px;
+	}
+	@include breakpoint(max-lg) {
+		margin-bottom: 28px;
 	}
 	@include breakpoint(max-md) {
 		margin-bottom: 22px;
@@ -317,6 +320,7 @@ $shadow: var(--box-shadow);
 }
 .w-36 {
 	width: 36px;
+	min-width: 36px;
 }
 .w-38 {
 	width: 38px;
@@ -486,7 +490,7 @@ $shadow: var(--box-shadow);
 	.w-48 {
 		width: 38px;
 	}
-	.h-48{
+	.h-48 {
 		height: 38px;
 	}
 	.min-w-48 {
