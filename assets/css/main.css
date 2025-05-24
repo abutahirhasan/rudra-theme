@@ -3662,7 +3662,9 @@ input.main-search-input::placeholder {
   visibility: hidden;
   opacity: 0;
 }
-.financial-subbox span, .financial-subbox h5, .financial-subbox a {
+.financial-subbox span,
+.financial-subbox h5,
+.financial-subbox a {
   color: var(--theme4) !important;
 }
 .financial-subbox .icon {
@@ -3671,8 +3673,8 @@ input.main-search-input::placeholder {
 
 .choose-items4 {
   border-radius: 24px;
-  border: 1px solid var(--color-Border, #DDE4E3);
-  background: #F8F8F8;
+  border: 1px solid var(--color-Border, #dde4e3);
+  background: #f8f8f8;
   padding: 48px 18px;
   transition: all 0.5s;
 }
@@ -3686,6 +3688,70 @@ input.main-search-input::placeholder {
 @media (max-width: 1199px) {
   .choose-items4 {
     padding: 30px 18px;
+  }
+}
+
+.step-solution .cstom-container {
+  max-width: 1770px;
+  margin: 0 auto;
+}
+
+.step-wrapper-inner {
+  background: url(../../assets/img/about/step-bg.png) no-repeat center center;
+  background-size: cover;
+  margin-top: -50px;
+  z-index: 1;
+  position: relative;
+}
+.step-wrapper-inner .step-wrapper-slide {
+  position: relative;
+}
+.step-wrapper-inner .step-wrapper-slide::before {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.step-wrapper-inner .step-items .step-date {
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: Prompt;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 6px 16px;
+  color: var(--white);
+}
+.step-wrapper-inner .step-items .step-dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--white);
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.step-wrapper-inner .step-items .box {
+  border-radius: 24px;
+  background: rgba(0, 0, 0, 0.17);
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+}
+@media (min-width: 992px) {
+  .step-wrapper-inner .step-items .box {
+    height: 210px !important;
+  }
+}
+@media (max-width: 1399px) {
+  .step-wrapper-inner .step-items .box {
+    padding: 30px 18px;
+  }
+}
+@media (max-width: 1399px) {
+  .step-wrapper-inner {
+    margin-top: 20px;
   }
 }
 

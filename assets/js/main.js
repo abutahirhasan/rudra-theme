@@ -170,6 +170,38 @@
 			},
 		});
 
+		//>> step Start <<//
+		const stepWrapperSlide = new Swiper(".step-wrapper-slide", {
+			speed: 1500,
+			loop: true,
+			autoplay: {
+				delay: 1000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				},
+				767: {
+					slidesPerView: 3,
+					spaceBetween: 16,
+				},
+				500: {
+					slidesPerView: 2,
+					spaceBetween: 14,
+				},
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 12,
+				},
+			},
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+		});
+
 		//>> testimonial Start <<//
 		const testimonialSlide3 = new Swiper(".testimonial-Wrapper3", {
 			speed: 1500,
