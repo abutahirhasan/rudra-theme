@@ -59,21 +59,76 @@
 	// border-radius: 12px 0px 0px 12px;
 	background: #fff;
 	box-shadow: 10px 10px 40px 0px rgba(7, 0, 108, 0.07);
-    transition: all 0.4s;
+	transition: all 0.4s;
 	.icon {
-        transition: all 0.4s;
-        background-color: rgb(64, 51, 255, 6%);
+		transition: all 0.4s;
+		background-color: rgb(64, 51, 255, 6%);
 	}
 	@include breakpoint(max-xxl) {
-        padding: 40px 19px;
+		padding: 40px 19px;
+	}
+	&:hover {
+		h5,
+		a,
+		p {
+			color: $white;
+		}
+		background-color: $theme-color3;
+		.icon {
+			background-color: $white;
+		}
+	}
+}
+
+//financial-items
+.financial-items {
+	position: relative;
+	.icon {
+		min-width: 54px;
+	}
+	.content {
+		padding: 30px 0 !important;
 	}
     &:hover{
-        h5,a,p{
-            color: $white;
+        .financial-subbox{
+            opacity: 1;
+            visibility: visible;
         }
-        background-color: $theme-color3;
-        .icon{
-            background-color: $white;
-        }   
+    }
+}
+.financial-subbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    span,h5,a{
+        color: $theme-color4 !important;
+    }
+    .icon{
+        background-color: $white;
+    }
+}
+
+
+//Choose choose-items4
+.choose-items4{
+    border-radius: 24px;
+    border: 1px solid var(--color-Border, #DDE4E3);
+    background: #F8F8F8;
+    padding: 48px 18px;
+    transition: all 0.5s;
+    .boxes{
+        max-width: 220px;
+        margin: 0 auto;
+    }
+    &:hover{
+        border-color: $theme-color;
+    }
+    @include breakpoint(max-xl){
+        padding: 30px 18px;
     }
 }
