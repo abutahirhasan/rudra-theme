@@ -45,6 +45,23 @@
 			background: $theme-color2 !important;
 		}
 	}
+	&.style3 {
+		@include breakpoint(xl) {
+			.main-menu {
+				ul {
+					li {
+						a {
+							color: #000;
+							&:hover {
+								background: $white;
+								color: $theme-color3 !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 .header-sections {
@@ -308,8 +325,6 @@
 		}
 	}
 }
-
-
 
 .sidebar__toggle {
 	cursor: pointer;

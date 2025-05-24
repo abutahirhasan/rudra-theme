@@ -9,7 +9,7 @@
 .service-items2 {
 	padding: 64px 17px;
 	transition: all 0.4s;
-    overflow: hidden;
+	overflow: hidden;
 	.content {
 		max-width: 235px;
 		margin: 0 auto;
@@ -19,29 +19,61 @@
 			background: rgb(46, 204, 113, 10%);
 		}
 	}
-    .hover-ele{
-        opacity: 0;
-        right: -100%;
-        transition: all 0.3s;
-    }
+	.hover-ele {
+		opacity: 0;
+		right: -100%;
+		transition: all 0.3s;
+	}
 	&:hover {
 		background-color: $theme-color2;
-        .hover-ele{
-            opacity: 1;
-            right: 0;
-        }
+		.hover-ele {
+			opacity: 1;
+			right: 0;
+		}
 		.content {
 			.icons {
 				background: $white;
-                svg{
-                    path{
-                        fill: $theme-color4;
-                    }
-                }
+				svg {
+					path {
+						fill: $theme-color4;
+					}
+				}
 			}
 		}
 	}
-    @include breakpoint(max-lg){
-        padding: 40px 17px;
+	@include breakpoint(max-lg) {
+		padding: 40px 17px;
+	}
+}
+
+//Service Section3
+.bg-angel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+.service-items3 {
+	padding: 57px 40px;
+	// border-radius: 12px 0px 0px 12px;
+	background: #fff;
+	box-shadow: 10px 10px 40px 0px rgba(7, 0, 108, 0.07);
+    transition: all 0.4s;
+	.icon {
+        transition: all 0.4s;
+        background-color: rgb(64, 51, 255, 6%);
+	}
+	@include breakpoint(max-xxl) {
+        padding: 40px 19px;
+	}
+    &:hover{
+        h5,a,p{
+            color: $white;
+        }
+        background-color: $theme-color3;
+        .icon{
+            background-color: $white;
+        }   
     }
 }
