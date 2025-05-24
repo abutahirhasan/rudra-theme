@@ -146,6 +146,50 @@
 			},
 		});
 
+		//>> insight Start <<//
+		const insightWrapperSlide = new Swiper(".insight-Wrapper", {
+			speed: 1500,
+			loop: true,
+			autoplay: {
+				delay: 1000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 4,
+				},
+				767: {
+					slidesPerView: 3,
+				},
+				500: {
+					slidesPerView: 2,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
+		//>> testimonial Start <<//
+		const testimonialSlide3 = new Swiper(".testimonial-Wrapper3", {
+			speed: 1500,
+			loop: true,
+			breakpoints: {
+				1199: {
+					slidesPerView: 3,
+				},
+				767: {
+					slidesPerView: 2,
+				},
+				600: {
+					slidesPerView: 2,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
 		//>> Wow Animation Start <<//
 		new WOW().init();
 

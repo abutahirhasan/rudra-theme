@@ -218,3 +218,35 @@
 		min-width: 56px;
 	}
 }
+
+
+//work-items3
+.work-items3{
+	max-width: 292px;
+	margin: 0 auto;
+	z-index: 1;
+	.icon{
+		width: 100px;
+		height: 100px;
+	}
+	@include breakpoint(max-xl){
+		.icon{
+			width: 70px;
+			height: 70px;
+			img{
+				width: 36px;
+				height: 36px;
+				object-fit: contain;
+			}
+		}
+	}
+}
+.worak-line{
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 840px;
+	margin: 0 auto;
+	z-index: -1;
+}

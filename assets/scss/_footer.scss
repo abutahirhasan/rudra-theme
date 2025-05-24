@@ -113,3 +113,23 @@
 		}
 	}
 }
+
+
+//Footer Section 3
+.footer-section3{
+	background: url(../../assets/img/footer/footer-bg2.png) no-repeat center center;
+	background-size: cover;
+}
+.social-style3{
+	a{
+		background-color: $white;
+		&:hover{
+			background: $theme-color3;
+			color: $white;
+		}
+	}
+}
+
+.E9ECF3-bg{
+	background-color: #E9ECF3;
+}

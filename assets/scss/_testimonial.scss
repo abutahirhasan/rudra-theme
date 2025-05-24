@@ -49,3 +49,38 @@
 		}
 	}
 }
+
+//testimonial-section3
+.testimonial-section3 {
+	background: url(../../assets/img/testimonial/testimonial-bg3.png) no-repeat
+		center center;
+	background-size: cover;
+}
+.testimonial-items3 {
+	padding: 40px 40px;
+	border-radius: 16px;
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 8px 8px 32px 0px rgba(36, 12, 135, 0.07);
+	backdrop-filter: blur(10px);
+    margin: 5px 9px 30px;
+	p {
+		font-size: 18px;
+		font-style: italic;
+		font-weight: 400;
+		line-height: 160%;
+	}
+	.ratting {
+		i {
+			color: #f8c100;
+		}
+	}
+    .quote3{
+        width: 60px;
+    }
+	@include breakpoint(max-xxxl) {
+		padding: 26px 22px;
+	}
+	@include breakpoint(max-xxl) {
+		padding: 24px 19px;
+	}
+}

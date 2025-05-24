@@ -26,3 +26,25 @@
         }
     }
 }
+
+//blog-hove-primary3
+.blog-hove-primary3{
+    transition: all 0.4s;
+    &:hover{
+        background-color: $theme-color3 !important;
+        span,h5{
+            color: $white !important;
+        }
+        h5{
+            a{                
+                color: $white !important;
+            }
+        }
+        .hover-theme1{
+            background-color: $white !important;
+            i{
+                color: $theme-color3;
+            }
+        }
+    }
+}
