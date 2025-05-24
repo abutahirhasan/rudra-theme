@@ -335,6 +335,9 @@
 		bottom: 0;
 		left: 0;
 		padding-bottom: 10px;
+		@include breakpoint(xxl) {
+			bottom: -7px;
+		}
 	}
 	@media screen and (max-width: 1510px) {
 		.boxes {
@@ -383,6 +386,71 @@
 			.breadcrumb-cont {
 				width: 100%;
 				height: 52px;
+			}
+		}
+	}
+}
+
+//choose-partner-section{
+.choose-partner-section {
+	max-width: 1770px;
+	margin: 0 auto;
+	border-radius: 24px;
+	background: #fff;
+}
+.choose-partner-color {
+	.work-list-item {
+		background-color: $bg-color !important;
+		border-radius: 19px !important;
+		.icon {
+			background-color: $theme-color !important;
+			svg {
+				path {
+					fill: $theme-color4 !important;
+				}
+			}
+		}
+		&:hover {
+			background-color: $theme-color !important;
+			.icon {
+				background-color: $white !important;
+			}
+		}
+	}
+}
+.servie-benifit {
+	.icon {
+		background-color: $theme-color !important;
+		svg {
+			path {
+				fill: $theme-color4 !important;
+			}
+		}
+	}
+}
+
+//approch-items{
+.approch-items {
+	height: 100%;
+	.icons {
+		background-color: $theme-color !important;
+		svg {
+			path {
+				fill: $theme-color4;
+			}
+		}
+	}
+	.hover-ele {
+		opacity: 0.3 !important;
+	}
+	&:hover {
+		background-color: $theme-color !important;
+		.icons {
+			background-color: $theme-color4 !important;
+			svg {
+				path {
+					fill: $theme-color !important;
+				}
 			}
 		}
 	}

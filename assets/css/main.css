@@ -2880,6 +2880,11 @@ span {
   left: 0;
   padding-bottom: 10px;
 }
+@media (min-width: 1400px) {
+  .breadcrumb-banner .breadcrumb-cont {
+    bottom: -7px;
+  }
+}
 @media screen and (max-width: 1510px) {
   .breadcrumb-banner .boxes {
     max-width: 250px;
@@ -2929,6 +2934,59 @@ span {
     width: 100%;
     height: 52px;
   }
+}
+
+.choose-partner-section {
+  max-width: 1770px;
+  margin: 0 auto;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.choose-partner-color .work-list-item {
+  background-color: var(--bg) !important;
+  border-radius: 19px !important;
+}
+.choose-partner-color .work-list-item .icon {
+  background-color: var(--theme) !important;
+}
+.choose-partner-color .work-list-item .icon svg path {
+  fill: var(--theme4) !important;
+}
+.choose-partner-color .work-list-item:hover {
+  background-color: var(--theme) !important;
+}
+.choose-partner-color .work-list-item:hover .icon {
+  background-color: var(--white) !important;
+}
+
+.servie-benifit .icon {
+  background-color: var(--theme) !important;
+}
+.servie-benifit .icon svg path {
+  fill: var(--theme4) !important;
+}
+
+.approch-items {
+  height: 100%;
+}
+.approch-items .icons {
+  background-color: var(--theme) !important;
+}
+.approch-items .icons svg path {
+  fill: var(--theme4);
+}
+.approch-items .hover-ele {
+  opacity: 0.3 !important;
+}
+.approch-items:hover {
+  background-color: var(--theme) !important;
+}
+.approch-items:hover .icons {
+  background-color: var(--theme4) !important;
+}
+.approch-items:hover .icons svg path {
+  fill: var(--theme) !important;
 }
 
 .mean-container a.meanmenu-reveal {
