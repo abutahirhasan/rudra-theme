@@ -179,6 +179,9 @@ $shadow: var(--box-shadow);
 .theme-bg {
 	background-color: $theme-color;
 }
+.absolute-theme-bg {
+	background-color: $theme-color !important;
+}
 .theme-clr2 {
 	color: $theme-color2;
 }
@@ -280,6 +283,10 @@ $shadow: var(--box-shadow);
 .fz-28 {
 	font-size: 28px;
 	line-height: 1.4;
+}
+.fz-36 {
+	font-size: 36px;
+	line-height: 1.2;
 }
 
 //font Weight
@@ -495,5 +502,9 @@ $shadow: var(--box-shadow);
 	}
 	.min-w-48 {
 		min-width: 38px;
+	}
+	.fz-36 {
+		font-size: 29px;
+		line-height: 1.4;
 	}
 }

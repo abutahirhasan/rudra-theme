@@ -59,6 +59,9 @@
 .section-bg {
 	background-color: $bg-color;
 }
+.absolute-bg{
+	background-color: $bg-color !important;
+}
 
 .section-bg-2 {
 	background-color: $bg-color-2;

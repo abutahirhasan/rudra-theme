@@ -175,6 +175,33 @@
 			}
 		}
 	}
+	&.growth-items-theme {
+		background-color: $theme-color !important;
+		ul {
+			li {
+				color: $theme-color4 !important;
+			}
+		}
+		h4,
+		p,
+		h2,
+		span,
+		ul,
+		li,
+		svg {
+			color: $theme-color4 !important;
+		}
+		svg {
+			path {
+				fill: $theme-color4;
+			}
+		}
+		.theme-btn {
+			background-color: $theme-color4 !important;
+			color: $white !important;
+			border-color: $theme-color4 !important;
+		}
+	}
 	&:hover {
 		.theme-btn {
 			background-color: $black !important;
